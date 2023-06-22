@@ -47,4 +47,4 @@ Caso queira voltar aos seus arquivos, pressione as teclas **Ctrl Shift E**.
 * Vá ao classroom, na atividade referente ao Simulado, clique em adicionar Link e cole o conteúdo que copiou
 * Faça a entrega do simulado
 
-# BOm SIMULADO A TODOS!
+# BOM SIMULADO A TODOS!
