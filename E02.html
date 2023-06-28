@@ -9,11 +9,25 @@
     //Calcule o custo total dos alimentos e verifique se há dinheiro suficiente para realizar a compra, indicando se sobrará ou faltará dinheiro, e também apresentando qual foi a quantia que sobrou ou faltou para realizar a compra. Apresente também na tela o valor total da compra.
 
     //ENTRADA
-
+    let mamao = parseFloat(prompt(`Informe o preço do mamão`).trim().replace(",","."));
+    let melancia = parseFloat (prompt(`Informe o preço do kg da melancia`).trim().replace(",","."));
+    let abacate = parseFloat (prompt(`Informe o preço do abacate`).trim().replace(",","."));
+    let cebola = parseFloat (prompt(`Informe o preço do kg da cebola`).trim().replace(",","."));
+    let custo = parseFloat (prompt(`Informe quanto de dinheiro você possui para realizar está compra`).trim().replace(",","."));
 
     //PROCESSAMENTO
+    const total = mamao + melancia + abacate + cebola 
+    let mensagemFinal =""
 
+    if (custo >= total){
+        const sobra = custo - total;
+        mensagemFinal = `Há dinheiro o suficente e sobrará R$${sobra} e o valor total da compra foi de R$${total}`;
+    }
+    else if (custo < total){
+        const falta = total - custo;
+        mensagemFinal = `Não há dinheiro o suficente,  falta R$${falta}, o valor total da compra foi de R$${total}`;
+    }
 
     //SAÍDA
-
+    alert(mensagemFinal);
 </script>
